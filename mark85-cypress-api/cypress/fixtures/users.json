@@ -1,0 +1,30 @@
+{
+  "login": {
+    "name": "Jennifer Aniston",
+    "email": "jennifer@hotmail.com",
+    "password": "pwd123"
+  },
+  "inv_pass": {
+    "email": "james1@email.com",
+    "password": "pwd1234"
+  },
+  "email_404": {
+    "email": "404@email.com",
+    "password": "pwd123"
+  },
+  "create": {
+    "name": "Fernando Papito",
+    "email": "papito@yahoo.com.br",
+    "password": "pwd123"
+  },
+  "dup_email": {
+    "name": "James Gunn",
+    "email": "james@email.com",
+    "password": "pwd123"
+  },
+  "required": {
+    "name": "Margot Robbie",
+    "email": "margot@email.com",
+    "password": "pwd123"
+  }
+}
