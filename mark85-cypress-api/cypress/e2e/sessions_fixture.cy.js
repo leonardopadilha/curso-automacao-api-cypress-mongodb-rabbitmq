@@ -2,7 +2,7 @@
 
 describe('POST //sessions', () => {
 
-    it('User session - cy.fixture', () => {
+    it('User session - cy.fixture', () => { // salvo apenas para aprendizado
 
         cy.fixture('users').then(function(users) {
             const userData = users.login
