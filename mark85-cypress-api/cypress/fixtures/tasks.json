@@ -1,0 +1,17 @@
+{
+    "create": {
+        "user": {
+            "name": "Leonardo Padilha",
+            "email": "leonardo@email.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Pagar a fatura do meu cartão",
+            "tags": [
+                "ourocard",
+                "smiles",
+                "santander"
+            ]
+        }
+    }
+}
