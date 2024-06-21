@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('POST //sessions', () => {
+describe('POST /sessions', () => {
 
     it('User session - cy.fixture', () => { // salvo apenas para aprendizado
 
