@@ -7,7 +7,7 @@ describe('POST /sessions', () => {
         cy.fixture('users').then(function(users) {
             const userData = users.login
             
-            cy.task("deleteUser", userData.email);
+            cy.task("removeUser", userData.email);
             cy.postUser(userData)
     
             cy.postSession(userData)

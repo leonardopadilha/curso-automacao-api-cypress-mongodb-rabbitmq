@@ -23,7 +23,7 @@ describe('POST /tasks', () => {
 
         const { user, task } = this.tasks.create
 
-        cy.task('deleteUser', user.email)
+        cy.task('removeUser', user.email)
         cy.postUser(user)
 
         cy.postSession(user)
@@ -32,7 +32,7 @@ describe('POST /tasks', () => {
                 //cy.log(response.body.token)
                 //Cypress.env('token', response.body.token)
 
-                cy.task('deleteTask', task.name, user.email)
+                cy.task('removeTask', task.name, user.email)
                 cy.postTask(task, token)
                     .then(response => {
                         expect(response.status).to.eq(200)
@@ -49,7 +49,7 @@ describe('POST /tasks', () => {
 
         const { user, task } = this.tasks.dup
 
-        cy.task('deleteUser', user.email)
+        cy.task('removeUser', user.email)
         cy.postUser(user)
 
         cy.postSession(user)
@@ -58,7 +58,7 @@ describe('POST /tasks', () => {
                 //cy.log(response.body.token)
                 //Cypress.env('token', response.body.token)
 
-                cy.task('deleteTask', task.name, user.email)
+                cy.task('removeTask', task.name, user.email)
 
                 cy.postTask(task, token)
                 cy.postTask(task, token)
