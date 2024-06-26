@@ -41,7 +41,7 @@ describe('GET /tasks/:id', () => {
     it('get unique task', function () {
         const { user, task } = this.tasks.unique
 
-        cy.task('removeUser', task.name, user.email)
+        cy.task('removeTask', task.name, user.email)
         cy.task('removeUser', user.email)
         cy.postUser(user)
 
@@ -63,7 +63,7 @@ describe('GET /tasks/:id', () => {
     it('task not found', function () {
         const { user, task } = this.tasks.not_found
 
-        cy.task('removeUser', task.name, user.email)
+        cy.task('removeTask', task.name, user.email)
         cy.task('removeUser', user.email)
         cy.postUser(user)
 
