@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "allure:serve": "npx allure serve"
   },
   "keywords": [
     "cypress",
@@ -17,8 +18,11 @@
   "author": "Leonardo Padilha",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.29.0",
     "cypress": "^13.11.0",
     "cypress-plugin-api": "^2.11.1",
+    "dotenv": "^16.4.5",
     "mongodb": "^6.7.0"
   }
 }
